@@ -107,3 +107,25 @@ h1 {
 #restart-button:hover {
     background-color: #0056b3;
 }
+
+/* --- Footer --- */
+footer {
+    margin-top: 40px; /* Espacio superior para separarlo del contenido del juego */
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+footer a {
+    color: #007bff; /* Color azul para el enlace, contrastando con el fondo oscuro */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
