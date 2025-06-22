@@ -1,6 +1,8 @@
 
 Un clásico juego de Conecta 4 implementado en JavaScript, HTML y CSS, ¡con un oponente de Inteligencia Artificial desafiante! Pon a prueba tus habilidades estratégicas.
 
+Demo: https://glowing-space-doodle-r4g9746v75p2ww94-8080.app.github.dev/
+
 # 🟡🔴 Connect Four AI Game | Conecta 4 con Inteligencia Artificial
 
 ---
