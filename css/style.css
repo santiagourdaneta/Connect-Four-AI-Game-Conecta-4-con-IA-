@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Información del juego */
+.game-info {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+#current-player {
+    font-weight: bold;
+    color: #dc3545; /* Rojo inicial */
+}
+
+/* El tablero de Conecta 4 */
+.board {
+    display: grid;
+    /* 6 filas x 7 columnas */
+    grid-template-rows: repeat(6, 80px);
+    grid-template-columns: repeat(7, 80px);
+    background-color: #007bff; /* Color azul del tablero */
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px; /* Espacio entre las celdas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Cada celda del tablero */
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0; /* Fondo claro de los agujeros */
+    border-radius: 50%; /* Forma circular de los agujeros */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que la ficha esté contenida */
+    position: relative; /* Para posicionar la ficha dentro */
+}
+
+/* Cuando una columna es 'hover' (ratón encima) */
+.column-hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Un ligero resplandor */
+    cursor: pointer;
+}
+
+/* Las fichas */
+.piece {
+    width: 70px; /* Un poco más pequeña que la celda */
+    height: 70px;
+    border-radius: 50%;
+    position: absolute; /* Para que caiga y se posicione */
+    bottom: 100%; /* Empieza por encima de la celda */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    transition: bottom 0.5s ease-out; /* Animación de caída */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.piece.red {
+    background-color: #dc3545; /* Rojo vibrante */
+}
+
+.piece.yellow {
+    background-color: #ffc107; /* Amarillo vibrante */
+}
+
+/* Mensajes de juego */
+.game-messages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#message {
+    font-size: 2em;
+    font-weight: bold;
+    color: #28a745; /* Verde para victorias */
+    display: block; /* Asegura que ocupe su propio espacio */
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+     
+}
+
+#restart-button:hover {
+    background-color: #0056b3;
+}

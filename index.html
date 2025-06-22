@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Juega Conecta 4!</title>
+    <meta name="description" content="Un divertido juego de Conecta 4 online. ¡Conecta cuatro fichas en línea para ganar!">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="game-messages" role="status" aria-live="polite">
+    <p id="message" class="game-status-message">
+        ¡A jugar Conecta 4!
+
+    </p>
+    
+</div>
+     
+    <h1>Conecta 4</h1>
+
+    <div class="game-info">
+        <p>Turno: <span id="current-player">Rojo</span></p>
+        <button id="restart-button" class="game-button" type="button" aria-label="Jugar de nuevo al Conecta 4">
+        Jugar de Nuevo
+    </button>
+    </div>
+
+    <div id="board" class="board">
+        </div>
+
+   
+
+    <script src="js/script.js"></script>
+</body>
+</html>
